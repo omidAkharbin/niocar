@@ -39,12 +39,10 @@ const Navbar = ({onMenuToggle, menuOpen}: NavbarProps) => {
       </div>
 
       <Link to="/" className={classes["nav-logo"]}>
-        <img src="/src/assets/EC6logo.png" alt="NIO EC6" />
+        <img src="./src/assets/EC6logo.png" alt="NIO EC6" />
       </Link>
     </div>
   );
 };
 
 export default Navbar;
-
- 

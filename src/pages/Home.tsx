@@ -1,7 +1,5 @@
 import React, {ReactNode} from "react";
-import HomeIntro from "../Components/HomeIntro/HomeIntro";
-import Models from "../Components/Models/Models";
-import Testimonials from "../Components/Testimonials/Testimonials";
+
 import "./pages.css";
 
 interface HomeProps {
@@ -9,14 +7,7 @@ interface HomeProps {
 }
 
 const Home = (props: HomeProps) => {
-  return (
-    <div className="home-container">
-      {props.children}
-      {/* <HomeIntro /> */}
-      {/* <Models /> */}
-      {/* <Testimonials /> */}
-    </div>
-  );
+  return <div className="home-container">{props.children}</div>;
 };
 
 export default Home;
