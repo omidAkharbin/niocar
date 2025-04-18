@@ -23,8 +23,6 @@ const App = () => {
   const [playState, setPlayState] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  
-
   useEffect(() => {
     // Prevent scrolling when menu is open
     if (menuOpen) {
@@ -42,7 +40,7 @@ const App = () => {
       return () => clearInterval(interval);
     }
   }, [playState, menuOpen]);
-  
+
   const handleToggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -74,6 +72,7 @@ const App = () => {
                 </Home>
               }
             />
+
             <Route path="/features" element={<Features />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
